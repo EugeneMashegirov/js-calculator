@@ -1,0 +1,102 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+}
+
+#calculator {
+    position: absolute;
+    top: 100px;
+    left: calc(50% - 150px);
+    width: 300px;
+    height: 460px;
+    border: 1px solid black;
+    border-radius: 20px;
+    box-shadow: 7px 7px 9px #999;
+    background: grey;
+}
+
+.battery {
+    height: 30px;
+    width: 40%;
+    margin-left: 15px;
+    margin-top: 15px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background: rgba(165, 42, 42, .5);
+}
+
+.battery div {
+    display: inline-block;
+    width: 27px;
+    height: 100%;
+    border-right: 1px solid black;
+}
+
+.label {
+    position: absolute;
+    top: 30px;
+    right: 13px;
+    font-size: 11px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.ellipse {
+    width: 90%;
+    height: 70px;
+    margin: auto;
+    border: 1px solid black;
+    border-radius: 40px;
+    margin-top: 20px;
+}
+
+#field {
+    display: block;
+    width: 80%;
+    height: 50px; 
+    border-radius: 5px;
+    font-size: 25px;
+    text-align: right;
+    border: 2px solid black;
+    margin: 10px auto;
+    background-color: rgba(85, 107, 47, .5);
+}
+
+.buttons {
+    padding-top: 10px;
+    padding-left: 20px;
+}
+
+.buttons button {
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+.operator {
+    background: darkcyan;
+}
+
+#count {
+    background: red;
+}
+
+@media screen and (max-width: 400px) {
+    .wrapper {
+        padding-right: 20px;
+        padding-left: 5px;
+    }
+
+    .label {
+        font-size: 10px;
+    }
+}
